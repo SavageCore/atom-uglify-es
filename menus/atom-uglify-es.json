@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [{
+      "label": "Minify JavaScript",
+      "command": "atom-uglify-es:uglify"
+    }],
+    ".tab-bar .tab": [{
+      "label": "Minify JavaScript",
+      "command": "atom-uglify-es:uglify-tab"
+    }],
+    ".tree-view:not(.multi-select) .file.selected > .name": [{
+      "label": "Minify JavaScript",
+      "command": "atom-uglify-es:uglify-tree"
+    }]
+  },
+  "menu": [{
+    "label": "Packages",
+    "submenu": [{
+      "label": "uglify-es",
+      "submenu": [{
+        "label": "Minify JavaScript",
+        "command": "atom-uglify-es:uglify"
+      }]
+    }]
+  }]
+}
