@@ -39,8 +39,6 @@
     "globals": [
       "atom",
       "waitsForPromise",
-      "Range",
-      "Point",
       "document"
     ],
     "rules": {
