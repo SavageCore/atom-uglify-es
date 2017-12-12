@@ -1,7 +1,7 @@
 {
   "name": "atom-uglify-es",
   "main": "./lib/atom-uglify-es",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Uglify Javascript with uglify-es",
   "keywords": [
     "javascript",
@@ -14,7 +14,6 @@
     "atom-workspace": "atom-uglify-es:uglify",
     ".tab-bar": "atom-uglify-es:uglify-tab",
     ".tree-view": "atom-uglify-es:uglify-tree"
-
   },
   "repository": "https://github.com/SavageCore/atom-uglify-es",
   "license": "MIT",
