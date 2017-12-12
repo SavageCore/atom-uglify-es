@@ -43,6 +43,9 @@
     ],
     "rules": {
       "max-nested-callbacks": 0
-    }
+    },
+    "ignores": [
+      "atom/Atom.app/**"
+    ]
   }
 }
