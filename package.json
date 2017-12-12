@@ -45,7 +45,8 @@
       "max-nested-callbacks": 0
     },
     "ignores": [
-      "atom/Atom.app/**"
+      "atom/Atom.app/**",
+      "atom/Atom Beta.app/**"
     ]
   }
 }
