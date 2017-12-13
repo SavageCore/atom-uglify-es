@@ -18,7 +18,7 @@
   "repository": "https://github.com/SavageCore/atom-uglify-es",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.23.0 <2.0.0"
   },
   "dependencies": {
     "uglify-es": "^3.2.1"
