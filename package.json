@@ -1,7 +1,7 @@
 {
   "name": "atom-uglify-es",
   "main": "./lib/atom-uglify-es",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Uglify Javascript with uglify-es",
   "keywords": [
     "javascript",
