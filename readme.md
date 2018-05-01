@@ -2,6 +2,8 @@
 
 # atom-uglify-es
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SavageCore/atom-uglify-es.svg)](https://greenkeeper.io/)
+
 > Minify JavaScript with [uglify-es](https://www.npmjs.com/package/uglify-es)
 
 ## Install
