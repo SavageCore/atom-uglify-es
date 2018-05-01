@@ -1,8 +1,5 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/xdl3nffcglveivit/branch/master?svg=true)](https://ci.appveyor.com/project/SavageCore/atom-uglify-es/branch/master) [![Build Status](https://travis-ci.org/SavageCore/atom-uglify-es.svg?branch=master)](https://travis-ci.org/SavageCore/atom-uglify-es) [![Dependency Status](https://dependencyci.com/github/SavageCore/atom-uglify-es/badge)](https://dependencyci.com/github/SavageCore/atom-uglify-es)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/xdl3nffcglveivit/branch/master?svg=true)](https://ci.appveyor.com/project/SavageCore/atom-uglify-es/branch/master) [![Build Status](https://travis-ci.org/SavageCore/atom-uglify-es.svg?branch=master)](https://travis-ci.org/SavageCore/atom-uglify-es) [![Dependency Status](https://dependencyci.com/github/SavageCore/atom-uglify-es/badge)](https://dependencyci.com/github/SavageCore/atom-uglify-es) [![Greenkeeper badge](https://badges.greenkeeper.io/SavageCore/atom-uglify-es.svg)](https://greenkeeper.io/)
 # atom-uglify-es
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/SavageCore/atom-uglify-es.svg)](https://greenkeeper.io/)
 
 > Minify JavaScript with [uglify-es](https://www.npmjs.com/package/uglify-es)
 
