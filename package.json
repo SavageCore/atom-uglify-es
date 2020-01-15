@@ -10,11 +10,6 @@
     "uglify",
     "es6"
   ],
-  "activationCommands": {
-    "atom-workspace": "atom-uglify-es:uglify",
-    ".tab-bar": "atom-uglify-es:uglify-tab",
-    ".tree-view": "atom-uglify-es:uglify-tree"
-  },
   "repository": "https://github.com/SavageCore/atom-uglify-es",
   "license": "MIT",
   "engines": {
