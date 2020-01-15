@@ -139,7 +139,7 @@ describe('AtomUglifyEs', () => {
 				editor.setText('async function test() {\n\tconst data = await fetch(\'http://example.com\');\n}');
 				editor.save();
 				fs.access(minSamplePath, fs.constants.F_OK, err => {
-					expect(err.errno).toBe(-2);
+					expect(err.code).toBe('ENOENT');
 				});
 			});
 		});
@@ -155,14 +155,17 @@ describe('AtomUglifyEs', () => {
 
 			runs(() => {
 				const minSamplePath = path.dirname(editor.getPath()) + '\\sample.min.js';
-				fs.closeSync(fs.openSync(minSamplePath, 'w'));
+				const watcher = chokidar.watch(minSamplePath, {
+					persistent: true
+				});
 
 				editor.setText('async function test() {\n\tconst data = await fetch(\'http://example.com\');\n}');
-				editor.save();
-				fs.access(minSamplePath, fs.constants.F_OK, err => {
-					expect(err.errno).toBe(-2);
+				watcher.on('add', () => {
+					const data = fs.readFileSync(minSamplePath, {encoding: 'utf-8'});
+					expect(data).toBe('async function test(){await fetch("http://example.com")}');
+					fs.unlinkSync(minSamplePath);
 				});
-				fs.unlinkSync(minSamplePath);
+				editor.save();
 			});
 		});
 
@@ -181,7 +184,7 @@ describe('AtomUglifyEs', () => {
 				editor.setText('async function test() {\n\tconst data = await fetch(\'http://example.com\');\n}');
 				editor.save();
 				fs.access(minSamplePath, fs.constants.F_OK, err => {
-					expect(err.errno).toBe(-2);
+					expect(err.code).toBe('ENOENT');
 				});
 			});
 		});
