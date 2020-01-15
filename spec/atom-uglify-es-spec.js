@@ -11,6 +11,7 @@ describe('AtomUglifyEs', () => {
 	let editor;
 
 	beforeEach(() => {
+		// Set default config options
 		atom.config.set('atom-uglify-es.compress', true);
 		atom.config.set('atom-uglify-es.mangle', true);
 		atom.config.set('atom-uglify-es.uglifyToFile', false);
